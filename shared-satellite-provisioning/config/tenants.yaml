@@ -1,0 +1,18 @@
+tenants:
+  tenant_A:
+    allowed_services: [mission_critical_voice, mobile_backhaul]
+    allowed_gateways: [gw_1]
+    allowed_regions: [north_zone]
+    max_active_slices: 3
+    max_total_bw_mbps: 120
+    can_preempt: true
+    priority_boost: 2
+
+  tenant_B:
+    allowed_services: [mobile_backhaul]
+    allowed_gateways: [gw_1]
+    allowed_regions: [north_zone]
+    max_active_slices: 2
+    max_total_bw_mbps: 80
+    can_preempt: false
+    priority_boost: 0

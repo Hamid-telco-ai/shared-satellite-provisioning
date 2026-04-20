@@ -1,0 +1,6 @@
+requests:
+  - {tick: 0, slice_id: slice_A, tenant_id: tenant_A, service_name: mission_critical_voice, region: north_zone, lifetime: 3, required_bw_mbps: 10}
+  - {tick: 1, slice_id: slice_B, tenant_id: tenant_B, service_name: mobile_backhaul, region: north_zone, lifetime: 3, required_bw_mbps: 40}
+
+events:
+  - {tick: 2, type: backhaul_failure, target_slice: slice_B, extra_bw_mbps: 80}

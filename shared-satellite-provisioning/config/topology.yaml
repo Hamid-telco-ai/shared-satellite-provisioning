@@ -1,0 +1,98 @@
+nodes:
+  gw_pop_1:
+    node_type: gateway_pop
+    cpu_total: 10
+    mem_total: 30
+    storage_total: 30
+    allowed_vnfs: [SBG, QOS, RRM, PEP, FW]
+    gateway_id: gw_1
+    hub_id: hub_1
+    hub_delay_ms: 2
+
+  gw_pop_2:
+    node_type: gateway_pop
+    cpu_total: 30
+    mem_total: 30
+    storage_total: 30
+    allowed_vnfs: [SBG, QOS, RRM, PEP, FW]
+    gateway_id: gw_2
+    hub_id: hub_2
+    hub_delay_ms: 1
+
+  edge_pop_1:
+    node_type: edge_pop
+    cpu_total: 20
+    mem_total: 20
+    storage_total: 20
+    allowed_vnfs: [FW, PEP]
+    hub_id: hub_1
+    hub_delay_ms: 8
+  edge_pop_2:
+    node_type: edge_pop
+    cpu_total: 15
+    mem_total: 15
+    storage_total: 15
+    allowed_vnfs: [FW, PEP]
+    hub_id: hub_1
+    hub_delay_ms: 10
+  pnf_attach_1:
+    node_type: pnf_site
+    cpu_total: 1
+    mem_total: 1
+    storage_total: 1
+    allowed_vnfs: []
+    gateway_id: gw_1
+    hub_id: hub_1
+    hub_delay_ms: 1
+  pnf_attach_2:
+    node_type: pnf_site
+    cpu_total: 1
+    mem_total: 1
+    storage_total: 1
+    allowed_vnfs: []
+    gateway_id: gw_2
+    hub_id: hub_2
+    hub_delay_ms: 1
+
+links:
+  - {src: gw_pop_1, dst: edge_pop_1, bw_total: 200, delay_ms: 5, link_type: transport}
+  - {src: gw_pop_1, dst: edge_pop_2, bw_total: 150, delay_ms: 7, link_type: transport}
+  - {src: gw_pop_1, dst: pnf_attach_1, bw_total: 1000, delay_ms: 1, link_type: fronthaul}
+  - {src: edge_pop_1, dst: edge_pop_2, bw_total: 80, delay_ms: 3, link_type: transport}
+  - {src: gw_pop_2, dst: edge_pop_1, bw_total: 180, delay_ms: 6, link_type: transport}
+  - {src: gw_pop_2, dst: edge_pop_2, bw_total: 160, delay_ms: 5, link_type: transport}
+  - {src: gw_pop_2, dst: pnf_attach_1, bw_total: 1000, delay_ms: 2, link_type: fronthaul}
+  - {src: gw_pop_2, dst: pnf_attach_2, bw_total: 1000, delay_ms: 1, link_type: fronthaul}
+
+beams:
+  beam_101:
+    region: north_zone
+    capacity_total_mbps: 50
+    raw_capacity_mbps: 80
+    mcs_efficiency: 0.85
+    fade_penalty: 0.90
+    weather_state: light_rain
+    visible_windows: [0, 1, 2, 3, 4, 5]
+    candidate_gateways: [gw_1]
+  
+  beam_102:
+    region: north_zone
+    capacity_total_mbps: 100
+    raw_capacity_mbps: 100
+    mcs_efficiency: 1.0
+    fade_penalty: 1.0
+    weather_state: clear
+    visible_windows: [0, 1, 2, 3, 4, 5]
+    candidate_gateways: [gw_1, gw_2]
+
+feeders:
+  gw_1:
+    capacity_total_mbps: 120
+  gw_2:
+    capacity_total_mbps: 120
+
+pnfs:
+  sbg_pnf_1:
+    attached_node: pnf_attach_1
+  sbg_pnf_2:
+    attached_node: pnf_attach_2

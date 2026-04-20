@@ -1,0 +1,34 @@
+services:
+  mission_critical_voice:
+    traffic_class: qos1
+    delay_threshold_ms: 25
+    min_guaranteed_bw_mbps: 20
+    latency_target_ms: 25
+    jitter_target_ms: 5
+    loss_target_pct: 1
+    priority_tier: critical
+    degradation_allowed: false
+    vnfs:
+      - {name: fw, vnf_type: FW, cpu: 2, mem: 2, storage: 1, proc_delay_ms: 2}
+      - {name: qos, vnf_type: QOS, cpu: 2, mem: 2, storage: 1, proc_delay_ms: 2}
+      - {name: sbg, vnf_type: SBG, cpu: 4, mem: 4, storage: 2, proc_delay_ms: 3, attached_pnf: sbg_pnf_1, max_fronthaul_delay_ms: 3, max_hub_delay_ms: 5}
+    virtual_links:
+      - {src: fw, dst: qos, bw: 10}
+      - {src: qos, dst: sbg, bw: 10}
+
+  mobile_backhaul:
+    traffic_class: qos2
+    delay_threshold_ms: 40
+    min_guaranteed_bw_mbps: 20
+    latency_target_ms: 40
+    jitter_target_ms: 15
+    loss_target_pct: 2
+    priority_tier: medium
+    degradation_allowed: true
+    vnfs:
+      - {name: pep, vnf_type: PEP, cpu: 3, mem: 2, storage: 1, proc_delay_ms: 3}
+      - {name: fw, vnf_type: FW, cpu: 2, mem: 2, storage: 1, proc_delay_ms: 2}
+      - {name: sbg, vnf_type: SBG, cpu: 5, mem: 4, storage: 2, proc_delay_ms: 4, attached_pnf: sbg_pnf_1, max_fronthaul_delay_ms: 3, max_hub_delay_ms: 5}
+    virtual_links:
+      - {src: pep, dst: fw, bw: 20}
+      - {src: fw, dst: sbg, bw: 20}
