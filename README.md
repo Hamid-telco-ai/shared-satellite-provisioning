@@ -210,7 +210,7 @@ This will:
 - lifetime
 - requested bandwidth
 
-## Project Structure
+## 📦 Project Structure
 
 ```text
 shared-satellite-provisioning/
@@ -225,6 +225,8 @@ shared-satellite-provisioning/
 ├── main.py          # entry point
 ├── README.md
 └── .gitignore
+
+```
 
 ## Example Output (Static mode: core orchestration result)
 
