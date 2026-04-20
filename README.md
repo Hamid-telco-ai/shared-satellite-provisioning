@@ -232,34 +232,45 @@ shared-satellite-provisioning/
 
 ```bash
 python3 main.py --mode static
+```
 
-Result
+**Result**
 
-  ACCEPTED
-  beam: beam_101
-  gateway: gw_1
-  total_delay_ms: 17.0
+```text
+ACCEPTED
+beam: beam_101
+gateway: gw_1
+total_delay_ms: 17.0
+```
 
-VNF Placement
+**VNF Placement**
 
-  {
+```json
+{
   "fw": "edge_pop_1",
   "qos": "gw_pop_1",
   "sbg": "gw_pop_2"
 }
+```
 
-Routing Paths
+**Routing Paths**
 
-  {
+```json
+{
   "fw->qos": ["edge_pop_1", "gw_pop_1"],
   "qos->sbg": ["gw_pop_1", "pnf_attach_1", "gw_pop_2"]
 }
+```
+
+---
 
 ## Example Output (Runtime mode: lifecycle and dynamic operation result)
 
 ```bash
-python main.py --mode runtime --ticks 5
+python3 main.py --mode runtime --ticks 5
+```
 
+```text
 TICK 0:
 slice_A ACCEPTED
 
@@ -275,3 +286,4 @@ slice_B expired
 
 TICK 4:
 no active slices
+```
