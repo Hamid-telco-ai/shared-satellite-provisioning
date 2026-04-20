@@ -296,13 +296,21 @@ no active slices
 ## References
 
 1. **On-Demand Network Slicing using SDN/NFV-enabled Satellite Ground Segment Systems**  
+– Presents an SDN/NFV-based framework for dynamic satellite network slicing, enabling on-demand resource allocation and end-to-end service orchestration across satellite ground segments.
+– https://ieeexplore.ieee.org/document/8460139
    Ahmed, T. et al.
 
 2. **Satellite Communications in the New Space Era: A Survey and Future Challenges**  
+– Provides a comprehensive survey of modern satellite communications, including LEO constellations, NTN integration with 5G/6G, and key challenges such as latency, mobility, and resource management.
+– https://ieeexplore.ieee.org/document/9210567
    Kodheli, O. et al.  
 
-3. **SDN/NFV-based Satellite Networks: Challenges and Developments**  
+2. **SDN/NFV-based Satellite Networks: Challenges and Developments**  
+– Reviews the application of SDN and NFV in satellite networks, highlighting architectural benefits, orchestration challenges, and opportunities for flexible, software-defined satellite systems.
+– https://doi.org/10.52202/078363-0054
    Rouzegar, H. et al.  
 
 4. **The Next Generation of Beam Hopping Satellite Systems: Dynamic Beam Illumination with Selective Precoding**  
+– Introduces advanced beam hopping techniques for satellite systems, focusing on dynamic resource allocation, interference management, and capacity optimization using selective precoding.
+– https://ieeexplore.ieee.org/document/9923617
    Chen, L. et al.  
