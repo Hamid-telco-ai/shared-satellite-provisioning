@@ -232,15 +232,16 @@ shared-satellite-provisioning/
 
 ```bash
 python3 main.py --mode static
-```
 
 Result
+
   ACCEPTED
   beam: beam_101
   gateway: gw_1
   total_delay_ms: 17.0
 
 VNF Placement
+
   {
   "fw": "edge_pop_1",
   "qos": "gw_pop_1",
@@ -248,6 +249,7 @@ VNF Placement
 }
 
 Routing Paths
+
   {
   "fw->qos": ["edge_pop_1", "gw_pop_1"],
   "qos->sbg": ["gw_pop_1", "pnf_attach_1", "gw_pop_2"]
@@ -257,7 +259,6 @@ Routing Paths
 
 ```bash
 python main.py --mode runtime --ticks 5
-```
 
 TICK 0:
 slice_A ACCEPTED
