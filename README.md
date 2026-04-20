@@ -125,6 +125,8 @@ d(node, PNF) ≤ D_max
 
 if d(node, PNF) > D_max → x = 0 (forbidden)
 
+---
+
 ## 1. Requirements
 
 - Python 3.10+
