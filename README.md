@@ -22,14 +22,16 @@ Unlike traditional approaches that optimize domains independently, this system e
 
 ---
 
-## System Architecture:
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
-    A[Satellite Layer\nBeam Selection] --> B[Gateway Layer\nFeeder Constraints]
-    B --> C[Compute Layer\nVNF Placement]
-    C --> D[Transport Layer\nRouting]
+    A[Satellite Layer - Beam Selection] --> B[Gateway Layer - Feeder Constraints]
+    B --> C[Compute Layer - VNF Placement]
+    C --> D[Transport Layer - Routing]
     D --> E[MILP Orchestrator]
+
+---
 
 ## Framework Overview:
 
