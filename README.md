@@ -76,18 +76,17 @@ MILP Orchestrator
 
 ### 🔹 Latency Model
 
-  ```text
-  λ_s = Σ (processing delay) + Σ (link delay)
+λ_s = Σ (processing delay) + Σ (link delay)
 
-  Constraint:
+**Constraint**
 
-  λ_s ≤ L_s_max + M × q_s
+λ_s ≤ L_s_max + M × q_s
 
-    λ_s: Actual end-to-end latency of slice s
-    L_s_max: Maximum allowed latency (SLA requirement)
-    M: Big-M constant (very large number)
-    q_s: Binary variable (0 or 1)
-
+**Parameters:**
+- **λ_s**: actual end-to-end latency of slice  
+- **L_s_max**: maximum allowed latency (SLA requirement)  
+- **M**: Big-M constant  
+- **q_s**: binary variable  
 
   ### Objective Function:
 
