@@ -1,7 +1,8 @@
 # Shared Satellite Service Provisioning Framework  
 ### SLA-Aware Multi-Domain Orchestration for NTN + Terrestrial Networks
 
-<img width="1024" height="1536" alt="Framework" src="https://github.com/user-attachments/assets/5c40861e-677e-4f4b-8ce0-813bfd14e527" />
+<img width="1024" height="1185" alt="580855426-5c40861e-677e-4f4b-8ce0-813bfd14e527" src="https://github.com/user-attachments/assets/a459d1f2-b9af-44c9-9009-4be1595d490b" />
+
 
 ---
 
