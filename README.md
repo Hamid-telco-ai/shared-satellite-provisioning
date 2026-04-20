@@ -88,7 +88,9 @@ MILP Orchestrator
 - **M**: Big-M constant  
 - **q_s**: binary variable  
 
-  ### Objective Function:
+---
+
+### 🔹 Objective Function  
 
   Minimizes:
 
@@ -97,6 +99,8 @@ MILP Orchestrator
     - Reconfiguration cost
     - Congestion
     - Latency
+    
+---
 
   ### Core Constraints:
 
