@@ -32,7 +32,7 @@ Unlike traditional approaches that optimize domains independently, this system e
 
 ---
 
-## Framework Overview:
+## Framework Overview
 
 ### Phase 1 — Baseline Orchestration
   - Static network topology
@@ -110,7 +110,7 @@ Minimizes:
 
 ---
 
-### 🔹 PNF Constraint (Key)
+### 🔹 PNF Constraint
 
 d(node, PNF) ≤ D_max
 
@@ -210,7 +210,7 @@ This will:
 - lifetime
 - requested bandwidth
 
-## 📦 Project Structure
+## Project Structure
 
 ```text
 shared-satellite-provisioning/
@@ -269,6 +269,8 @@ total_delay_ms: 17.0
 ```bash
 python3 main.py --mode runtime --ticks 5
 ```
+
+**Result**
 
 ```text
 TICK 0:
