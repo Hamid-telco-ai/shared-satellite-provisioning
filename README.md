@@ -66,7 +66,7 @@ MILP Orchestrator
 
 ### 🔹 Beam Capacity
 
-C_b = C_b_raw × η_b × φ_b
+  C_b = C_b_raw × η_b × φ_b
 
 - **C_b_raw**: raw beam capacity  
 - **η_b**: modulation efficiency  
