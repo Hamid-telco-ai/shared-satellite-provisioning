@@ -292,14 +292,14 @@ no active slices
 
 ## References
 
-1. Ahmed, T., Alleg, A., Ferrus, R., Riggio, R.,  
-   *On-Demand Network Slicing using SDN/NFV-enabled Satellite Ground Segment Systems*  
+1. **On-Demand Network Slicing using SDN/NFV-enabled Satellite Ground Segment Systems**  
+   Ahmed, T., Alleg, A., Ferrus, R., Riggio, R.  
 
-2. Kodheli, O. et al.,  
-   *Satellite Communications in the New Space Era: A Survey and Future Challenges*  
+2. **Satellite Communications in the New Space Era: A Survey and Future Challenges**  
+   Kodheli, O. et al.  
 
-3. Rouzegar, H. et al.,  
-   *SDN/NFV-based Satellite Networks: Challenges and Developments*  
+3. **SDN/NFV-based Satellite Networks: Challenges and Developments**  
+   Rouzegar, H. et al.  
 
-4. Chen, L. et al.,  
-   *The Next Generation of Beam Hopping Satellite Systems: Dynamic Beam Illumination with Selective Precoding*  
+4. **The Next Generation of Beam Hopping Satellite Systems: Dynamic Beam Illumination with Selective Precoding**  
+   Chen, L. et al.  
