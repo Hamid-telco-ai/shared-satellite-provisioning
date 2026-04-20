@@ -90,38 +90,40 @@ MILP Orchestrator
 
 ---
 
-### 🔹 Objective Function  
+### 🔹 Objective Function
 
-  Minimizes:
+Minimizes:
 
-    - SLA violations
-    - Bandwidth shortfall
-    - Reconfiguration cost
-    - Congestion
-    - Latency
-    
+- SLA violations  
+- Bandwidth shortfall  
+- Reconfiguration cost  
+- Congestion  
+- Latency  
+
 ---
 
-  ### Core Constraints:
+### 🔹 Core Constraints
 
-    - Slice activation
-    - Beam capacity
-    - Gateway capacity
-    - Node compute limits
-    - Flow conservation
+- Slice activation  
+- Beam capacity  
+- Gateway capacity  
+- Node compute limits  
+- Flow conservation  
 
-  ### PNF Constraint:
-  
-  ```text
-  d(node, PNF) ≤ D_max
+---
 
-    d(node,PNF): Network delay (latency) between a candidate compute node and a PNF (Physical Network Function)
-    D_max: Maximum allowed delay between VNF and its associated PNF
-    
-    This constraint directly impacts:
-      VNF placement variables x_s,v,n
-      Candidate filtering:
-        if d(node, PNF) > D_max → x = 0 (forbidden)
+### 🔹 PNF Constraint (Key)
+
+d(node, PNF) ≤ D_max
+
+- **d(node, PNF)**: network delay between a candidate compute node and a Physical Network Function  
+- **D_max**: maximum allowed delay between a VNF and its associated PNF  
+
+**Impact:**
+- Restricts VNF placement  
+- Invalid placements are removed:
+
+if d(node, PNF) > D_max → x = 0 (forbidden)
 
 ## 1. Requirements
 
