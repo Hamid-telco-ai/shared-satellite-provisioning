@@ -127,7 +127,7 @@ if d(node, PNF) > D_max → x = 0 (forbidden)
 
 ---
 
-## 1. Requirements
+## Requirements
 
 - Python 3.10+
 - Packages:
@@ -151,7 +151,7 @@ py -m venv .venv
 pip install networkx pyyaml pulp
 ```
 
-## 2. Run the static demo
+## Run the static demo
 
 ```bash
 python3 main.py --mode static
@@ -168,7 +168,7 @@ This will:
 - reserve compute, link, beam, and feeder resources
 - print a snapshot of remaining resources
 
-## 3. Run the runtime simulation
+## Run the runtime simulation
 
 ```bash
 python3 main.py --mode runtime --ticks 5
@@ -181,7 +181,7 @@ This will:
 - free expired slices
 - print snapshots after each tick
 
-## 4. Configuration Files
+## Configuration Files
 
 ### Topology
 `config/topology.yaml`:
@@ -212,7 +212,7 @@ This will:
 - lifetime
 - requested bandwidth
 
-## 5. Project Structure
+## Project Structure
 shared-satellite-provisioning/
 ├── orchestrator/
 ├── models/
@@ -222,7 +222,7 @@ shared-satellite-provisioning/
 ├── docs/
 └── README.md
 
-## 6. Example Output (Static mode: core orchestration result)
+## Example Output (Static mode: core orchestration result)
 
 ```bash
 python3 main.py --mode static
@@ -247,7 +247,7 @@ Routing Paths
   "qos->sbg": ["gw_pop_1", "pnf_attach_1", "gw_pop_2"]
 }
 
-## 7. Example Output (Runtime mode: lifecycle and dynamic operation result)
+## Example Output (Runtime mode: lifecycle and dynamic operation result)
 
 ```bash
 python main.py --mode runtime --ticks 5
@@ -268,10 +268,3 @@ slice_B expired
 
 TICK 4:
 no active slices
-
-## Interpretation
-
-This simulation highlights the system's ability to:
-- adapt to network degradation
-- manage competing slice demands
-- enforce SLA-aware orchestration under constraints
