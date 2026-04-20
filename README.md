@@ -293,7 +293,7 @@ no active slices
 ## References
 
 1. **On-Demand Network Slicing using SDN/NFV-enabled Satellite Ground Segment Systems**  
-   Ahmed, T., Alleg, A., Ferrus, R., Riggio, R.  
+   Ahmed, T. et al.
 
 2. **Satellite Communications in the New Space Era: A Survey and Future Challenges**  
    Kodheli, O. et al.  
