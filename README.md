@@ -47,7 +47,7 @@ Unlike traditional approaches that optimize domains independently, this system e
   - Fronthaul delay limitations
   - PNF anchoring enforcement
 
-### Phase 3 — Beam & Feeder Allocation
+### Phase 3 — Beam and Feeder Allocation
   - Satellite beam selection
   - Feeder capacity constraints
   - Beam–gateway coupling
@@ -57,7 +57,7 @@ Unlike traditional approaches that optimize domains independently, this system e
   - Slice expiration handling
   - Resource release and reuse
 
-### Phase 5 — Dynamic Re-Optimization
+### Phase 5 — Dynamic Re-optimization
   - Failure detection and handling
   - Degradation-aware recovery
   - MILP-ready orchestration architecture
