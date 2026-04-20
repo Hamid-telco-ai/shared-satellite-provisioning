@@ -24,15 +24,12 @@ Unlike traditional approaches that optimize domains independently, this system e
 
 ## System Architecture:
 
-Satellite Layer → Beam Selection
-        ↓
-Gateway Layer → Feeder Constraints
-        ↓
-Compute Layer → VNF Placement
-        ↓
-Transport Layer → Routing
-        ↓
-MILP Orchestrator
+```mermaid
+flowchart TD
+    A[Satellite Layer\nBeam Selection] --> B[Gateway Layer\nFeeder Constraints]
+    B --> C[Compute Layer\nVNF Placement]
+    C --> D[Transport Layer\nRouting]
+    D --> E[MILP Orchestrator]
 
 ## Framework Overview:
 
