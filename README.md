@@ -65,12 +65,12 @@ MILP Orchestrator
 ## 📐 Mathematical Model
 
 ### 🔹 Beam Capacity
-```text
+
 C_b = C_b_raw × η_b × φ_b
 
-- **C_b_raw**: raw beam capacity  
-- **η_b**: modulation efficiency  
-- **φ_b**: channel degradation  
+        - **C_b_raw**: raw beam capacity  
+        - **η_b**: modulation efficiency  
+        - **φ_b**: channel degradation  
 
 ---
 
