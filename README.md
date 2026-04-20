@@ -62,18 +62,18 @@ MILP Orchestrator
   - Degradation-aware recovery
   - MILP-ready orchestration architecture
 
-## 📐 Mathematical Model
+## Mathematical Model
 
 ### 🔹 Beam Capacity
 
 ```text
 C_b = C_b_raw × η_b × φ_b
 
-    C_b_raw: raw beam capacity
-    η_b: modulation efficiency
-    φ_b: channel degradation
+C_b_raw: raw beam capacity
+η_b: modulation efficiency
+φ_b: channel degradation
 
-  ### Latency Model
+Latency Model
 
   ```text
   λ_s = Σ (processing delay) + Σ (link delay)
