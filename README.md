@@ -211,14 +211,20 @@ This will:
 - requested bandwidth
 
 ## Project Structure
+
+```text
 shared-satellite-provisioning/
-├── orchestrator/
-├── models/
-├── solver/
-├── scenarios/
-├── results/
-├── docs/
-└── README.md
+├── config/          # topology, services, runtime configs
+├── inventory/       # resource/state tracking
+├── models/          # data models and abstractions
+├── optimization/    # MILP and heuristic solvers
+├── orchestration/   # admission, reservation logic
+├── policy/          # placement and satellite policies
+├── runtime/         # lifecycle and event handling
+├── tests/           # test cases
+├── main.py          # entry point
+├── README.md
+└── .gitignore
 
 ## Example Output (Static mode: core orchestration result)
 
