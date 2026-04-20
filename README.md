@@ -62,7 +62,7 @@ MILP Orchestrator
   - Degradation-aware recovery
   - MILP-ready orchestration architecture
 
-## 📐 Mathematical Model
+## Mathematical Model
 
 ### 🔹 Beam Capacity
 
